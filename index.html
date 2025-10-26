@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AxAI | 차세대 경량 AI 플랫폼</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    :root {
+      --primary: #1d4ed8;
+      --secondary: #0f172a;
+      --accent: #3b82f6;
+      --text: #e2e8f0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--secondary);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(15, 23, 42, 0.9);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    header h1 {
+      color: var(--accent);
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: var(--text);
+      margin-left: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      padding: 6rem 10%;
+      min-height: 100vh;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(to bottom right, #0f172a, #1e3a8a);
+      color: #fff;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      animation: fadeInDown 1s ease;
+    }
+
+    .hero p {
+      max-width: 600px;
+      font-size: 1.1rem;
+      opacity: 0.85;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .content h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    .content p {
+      margin-bottom: 1rem;
+      max-width: 800px;
+      font-size: 1.05rem;
+      opacity: 0.9;
+    }
+
+    .content ul {
+      list-style: disc;
+      padding-left: 2rem;
+      margin-top: 1rem;
+    }
+
+    .highlight {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #0f172a;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    footer p {
+      opacity: 0.8;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 5rem 5%;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AxAI</h1>
+    <nav>
+      <a href="#problem">문제</a>
+      <a href="#solution">솔루션</a>
+      <a href="#market">시장</a>
+      <a href="#team">팀</a>
+      <a href="#investment">투자</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>저렴하지만 강력한 AI, <span class="highlight">AxAI</span></h2>
+    <p>모든 사용자가 부담 없이 고품질 AI를 사용할 수 있도록, AxAI는 경량화된 LLM과 API 하이브리드 구조로 새로운 기준을 만듭니다.</p>
+  </section>
+
+  <section id="problem" class="content">
+    <h3>1. 현재의 문제</h3>
+    <p>현재 생성형 AI 시장은 <span class="highlight">거대 기업(OpenAI, Google)</span>이 독점하고 있으며, 월 약 3만원의 높은 구독료로 인해 사용자들의 진입 장벽이 높습니다.</p>
+    <p>AxAI는 “<strong>가격은 1/3, 품질은 동일</strong>”을 목표로, 직장인과 대학생 등 실제 사용자 부담을 줄이는 데 집중합니다.</p>
+  </section>
+
+  <section id="solution" class="content">
+    <h3>2. 솔루션 및 서비스</h3>
+    <p>AxAI는 자체 경량 LLM 모델과 API를 결합한 <span class="highlight">하이브리드 AI 플랫폼</span>입니다.</p>
+    <ul>
+      <li><strong>AxAI App:</strong> 채팅, 이미지, 동영상 생성 통합 플랫폼</li>
+      <li><strong>AxNow:</strong> 사용자의 작업에 맞는 AI 어시스턴트 자동 생성</li>
+      <li><strong>AxVoice:</strong> 음성 기반 실시간 대화형 AI (27개 언어 지원)</li>
+    </ul>
+  </section>
+
+  <section id="market" class="content">
+    <h3>3. 시장 기회</h3>
+    <p>전 세계 생성형 AI 시장은 <strong>2030년까지 약 6680억 달러</strong> 규모로 성장할 것으로 예상됩니다.</p>
+    <p>국내 시장은 약 6.3조 원이며, AxAI는 3년 내 <strong>0.1% 점유율(60억 원 규모)</strong>을 목표로 합니다.</p>
+  </section>
+
+  <section id="team" class="content">
+    <h3>4. 팀 구성</h3>
+    <p><strong>CEO:</strong> 前 Python AI 프로그래머 / 스타트업 창업 경험</p>
+    <p><strong>COO:</strong> 경영학 전공 / Web3 연구 중</p>
+    <p><strong>CTO:</strong> 로봇베이스 개발자 / 3년 경력 (2026년 정식 합류 예정)</p>
+  </section>
+
+  <section id="investment" class="content">
+    <h3>5. 투자 및 자금 계획</h3>
+    <p><strong>총 투자금:</strong> 5억 원 (지분 16.67%)</p>
+    <ul>
+      <li>업무 기기 및 검색용 서버 구축: 1억</li>
+      <li>인건비 및 보수: 2억</li>
+      <li>앱/서비스 개발: 1억</li>
+      <li>사무실 및 예비자금: 1억</li>
+    </ul>
+    <p>2026년 Seed 투자 → 2027년 Series A → 2029년 Series B 로 성장 로드맵을 진행합니다.</p>
+  </section>
+
+  <section id="contact" class="content">
+    <h3>6. 문의하기</h3>
+    <p>📧 contact@axai.com</p>
+    <p>더 나은 세상을 위한 AI 혁신에 함께하세요.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 AxAI. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // 스크롤 시 부드러운 애니메이션 효과
+    const sections = document.querySelectorAll('.content');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+      section.style.opacity = 0;
+      section.style.transform = 'translateY(40px)';
+      section.style.transition = 'all 0.8s ease-out';
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
